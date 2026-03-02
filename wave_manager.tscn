@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bksjif53j7ocy"]
+
+[ext_resource type="Script" uid="uid://x327vdraam5e" path="res://wave_manager.gd" id="1_mdkq7"]
+[ext_resource type="PackedScene" uid="uid://dnffu3popdex4" path="res://Enemy.tscn" id="2_aietg"]
+[ext_resource type="PackedScene" uid="uid://bmgejoys2hgqw" path="res://crawler.tscn" id="3_hkgym"]
+[ext_resource type="PackedScene" uid="uid://b8ugf0bg2m20e" path="res://boss.tscn" id="4_saeb7"]
+
+[node name="Node" type="Node" unique_id=734478891]
+script = ExtResource("1_mdkq7")
+witch_scene = ExtResource("2_aietg")
+crawler_scene = ExtResource("3_hkgym")
+boss_scene = ExtResource("4_saeb7")

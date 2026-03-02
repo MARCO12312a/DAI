@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c2uk0odt6u8y"]
+
+[ext_resource type="Texture2D" uid="uid://g24ores5ycg6" path="res://Health potion.png" id="1_32kol"]
+
+[node name="Node2D" type="Node2D" unique_id=1177637795]
+
+[node name="WeaponSprite" type="Sprite2D" parent="." unique_id=1025639494]
+position = Vector2(-4.7683716e-07, 1.999999)
+scale = Vector2(0.7631579, 0.7105263)
+texture = ExtResource("1_32kol")

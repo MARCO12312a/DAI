@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c304b3eh6eqcv"]
+
+[ext_resource type="Script" uid="uid://snrs6pmgsqec" path="res://shotgun_pellet.gd" id="1_dd1yp"]
+[ext_resource type="Texture2D" uid="uid://u0v0r5kfqnkd" path="res://ASSETSNUESTROS/shotgunpellet.png" id="2_dd1yp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4s4u5"]
+size = Vector2(5.375, 0.625)
+
+[node name="Area2D" type="Area2D" unique_id=108221606]
+collision_layer = 2
+collision_mask = 4
+script = ExtResource("1_dd1yp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=241485036]
+scale = Vector2(0.7005, 0.491)
+texture = ExtResource("2_dd1yp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1162933267]
+position = Vector2(-0.6875, -0.3125)
+shape = SubResource("RectangleShape2D_4s4u5")

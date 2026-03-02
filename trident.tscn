@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cxe0lm262ymgm"]
+
+[ext_resource type="Texture2D" uid="uid://q41vf7ee7k7u" path="res://ASSETSNUESTROS/tridente_1.png" id="1_qlhfi"]
+[ext_resource type="Script" uid="uid://cbvg3p6oeoy05" path="res://trident.gd" id="1_y5oni"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y5oni"]
+size = Vector2(13, 20)
+
+[node name="Area2D" type="Area2D" unique_id=608399464]
+z_index = 10
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("1_y5oni")
+speed = 150.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=410124735]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_qlhfi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=894490331]
+position = Vector2(0.49999952, -11)
+shape = SubResource("RectangleShape2D_y5oni")

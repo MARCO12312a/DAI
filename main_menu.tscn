@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://dbppqsbqqo5qu"]
+
+[ext_resource type="Script" uid="uid://dige0krxoqqvi" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="Texture2D" uid="uid://bljocbg2fuqfc" path="res://ASSETSNUESTROS/menu.png" id="2_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://dxlrwbph4k1sl" path="res://ASSETSNUESTROS/jugar.png" id="3_jix8l"]
+
+[node name="Node2D" type="Node2D" unique_id=2121616205]
+position = Vector2(999, 585)
+scale = Vector2(2, 2)
+script = ExtResource("1_06t4h")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=67142263]
+z_index = 3
+position = Vector2(0, 2)
+texture = ExtResource("2_fu7sn")
+
+[node name="PlayBtn" type="Sprite2D" parent="." unique_id=343235906]
+z_index = 3
+position = Vector2(-4.5, -21)
+texture = ExtResource("3_jix8l")
+
+[node name="OpcionesBtn" type="Sprite2D" parent="." unique_id=785058787]
+z_index = 3
+position = Vector2(1.5, 62)
+texture = ExtResource("3_jix8l")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1119921232]
+offset_left = -503.5
+offset_top = -309.5
+offset_right = 509.5
+offset_bottom = 281.0
+color = Color(0, 0, 0, 1)

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://b0puhk3mgr175"]
+
+[ext_resource type="Script" uid="uid://dbo7s7r0tq8vx" path="res://dodged_text.gd" id="1_6csfl"]
+[ext_resource type="Texture2D" uid="uid://u1mu847a3oao" path="res://ASSETSNUESTROS/dodged.png" id="2_fhgwf"]
+
+[node name="Node2D" type="Node2D" unique_id=1437495355]
+script = ExtResource("1_6csfl")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1372877155]
+position = Vector2(7.6293945e-06, 0)
+scale = Vector2(0.17, 0.195)
+texture = ExtResource("2_fhgwf")

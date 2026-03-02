@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dn47bv7lscmy7"]
+
+[ext_resource type="Script" uid="uid://dhrt0t4ixl44a" path="res://laser.gd" id="1_fn5yt"]
+
+[node name="Node2D" type="Node2D" unique_id=425551595]
+script = ExtResource("1_fn5yt")
+
+[node name="Line2D" type="Line2D" parent="." unique_id=1886547857]

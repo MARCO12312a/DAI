@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cabd7m43u7mq1"]
+
+[ext_resource type="Script" uid="uid://d0wldbpvj21it" path="res://shotgun.gd" id="1_crxyp"]
+[ext_resource type="Texture2D" uid="uid://bhshtdiii0soy" path="res://ASSETSNUESTROS/Shotgun_(old).png" id="1_ndngi"]
+[ext_resource type="PackedScene" uid="uid://c304b3eh6eqcv" path="res://shotgunPellet.tscn" id="2_dmitx"]
+[ext_resource type="AudioStream" uid="uid://br8qv42la5e8q" path="res://ASSETSNUESTROS/MP3/escopeta.mp3" id="4_dmitx"]
+
+[node name="Shotgun" type="Node2D" unique_id=34438299]
+script = ExtResource("1_crxyp")
+bullet_scene = ExtResource("2_dmitx")
+
+[node name="WeaponSprite" type="Sprite2D" parent="." unique_id=1955583263]
+z_index = 10
+position = Vector2(8.000001, 0)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_ndngi")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1606623056]
+stream = ExtResource("4_dmitx")

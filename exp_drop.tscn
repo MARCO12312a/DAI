@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://bk6o7ds8tftsh"]
+
+[ext_resource type="Script" uid="uid://ds1tyvujie8qc" path="res://exp_drop.gd" id="1_4uxo7"]
+[ext_resource type="Texture2D" uid="uid://bglfk0x3yn0vh" path="res://AXIALE_orbs/AXIALE_orbs/orb_rotate.png" id="2_4uxo7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4uxo7"]
+radius = 1.4142135
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mshn3"]
+atlas = ExtResource("2_4uxo7")
+region = Rect2(0, 0, 10, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5o78q"]
+atlas = ExtResource("2_4uxo7")
+region = Rect2(10, 0, 10, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3xlck"]
+atlas = ExtResource("2_4uxo7")
+region = Rect2(20, 0, 10, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_buxwe"]
+atlas = ExtResource("2_4uxo7")
+region = Rect2(30, 0, 10, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ow2ob"]
+atlas = ExtResource("2_4uxo7")
+region = Rect2(40, 0, 10, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o3b0g"]
+atlas = ExtResource("2_4uxo7")
+region = Rect2(50, 0, 10, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ylm6c"]
+atlas = ExtResource("2_4uxo7")
+region = Rect2(60, 0, 10, 10)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vbd48"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mshn3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5o78q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3xlck")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_buxwe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ow2ob")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o3b0g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ylm6c")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="RigidBody2D" type="RigidBody2D" unique_id=1591182282]
+position = Vector2(-1, 1)
+scale = Vector2(0.5, 0.5)
+collision_layer = 32
+collision_mask = 3
+gravity_scale = 0.8
+contact_monitor = true
+max_contacts_reported = 1
+script = ExtResource("1_4uxo7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1892579751]
+position = Vector2(2, -2)
+shape = SubResource("CircleShape2D_4uxo7")
+
+[node name="AnimatedSpirte2D" type="AnimatedSprite2D" parent="." unique_id=1148195307]
+position = Vector2(2, -2)
+scale = Vector2(0.68421054, 0.6052632)
+sprite_frames = SubResource("SpriteFrames_vbd48")
+frame_progress = 0.37101662

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cnc4p6ge0er2q"]
+
+[ext_resource type="Script" uid="uid://c8bcrujjxiy3" path="res://bullet.gd" id="1_ayd6b"]
+[ext_resource type="Texture2D" uid="uid://cb2ctkdqcecn1" path="res://ASSETSNUESTROS/bala.png" id="2_4s4u5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4s4u5"]
+size = Vector2(10.75, 1.25)
+
+[node name="Area2D" type="Area2D" unique_id=108221606]
+collision_layer = 2
+collision_mask = 4
+script = ExtResource("1_ayd6b")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=241485036]
+position = Vector2(3, -1.9999981)
+scale = Vector2(0.7005, 0.491)
+texture = ExtResource("2_4s4u5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1162933267]
+position = Vector2(-0.375, 0)
+shape = SubResource("RectangleShape2D_4s4u5")

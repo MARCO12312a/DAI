@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cdskvrou8y6ca"]
+
+[ext_resource type="Script" uid="uid://bxfupvpyeuaty" path="res://laser_wall.gd" id="1_dvf3s"]
+
+[node name="Node2D" type="Node2D" unique_id=600731681]
+script = ExtResource("1_dvf3s")
+
+[node name="Line2D" type="Line2D" parent="." unique_id=292597038]
